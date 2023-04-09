@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+h3 {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 span a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*Underline - Left to Right */
+h3 span a {
+	display: inline-block;
+	position: relative;
+}
+
+h3 span a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    margin: -5px 0;
+    left: 0;
+    background-color: white;
+    transition: all 0.4s ease-in 0s;
+}
+
+h3 span a:hover::after {
+    width: 100%;
+} 
+
+/*# sourceMappingURL=main.css.map*/
